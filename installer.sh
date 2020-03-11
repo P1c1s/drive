@@ -27,9 +27,9 @@ read -p "Do you want install me? YES [y] NO [n]: " decision
 if [ "$decision" = "y" ]; then
 
    #Upadating
-   sudo apt-get update &&  sudo apt-get upgrade
+   apt-get update &&  apt-get upgrade
    #Installation of Apache2
-   sudo apt-get install apache2 && sudo apt-get install libapache2-mod-php
+   apt-get install apache2 && apt-get install libapache2-mod-php
 
    mv ../drive-master /var/www/html/drive
    echo 'Go to ' hostanme -I
