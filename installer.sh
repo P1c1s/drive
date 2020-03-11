@@ -28,10 +28,10 @@ if [ "$decision" = "y" ]; then
    #Upadating
    apt-get update &&  apt-get upgrade
    #Installation of Apache2
-   apt-get install apache2 && apt-get install libapache2-mod-php
+   apt-get install apache2 && apt-get install php7.3 && apt-get install libapache2-mod-php7.3
 
    #Move drive to web-root, Remove installer and Show ip
    mv ../drive /var/www/html/drive
    rm /var/www/html/drive/installer.sh
-   echo -e '\033[0;31m Go to ' $(hostanme -I)
+   echo -e '\033[0;31m Go to ' $(hostname -I)
 fi
