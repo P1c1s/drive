@@ -31,7 +31,7 @@ if [ "$decision" = "y" ]; then
    apt-get install apache2 && apt-get install libapache2-mod-php
 
    #Move drive to web-root, Remove installer and Show ip
-   mv ../drive-master /var/www/html/drive
+   mv ../drive /var/www/html/drive
    rm /var/www/html/drive/installer.sh
    echo -e '\033[0;31m Go to ' $(hostanme -I)
 fi
