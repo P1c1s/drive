@@ -22,7 +22,6 @@ echo -e '\033[1;37m';
 echo "Hi, I am a the installer of Drive. You must execute me like root or sudoers."
 read -p "Do you want install me? YES [y] NO [n]: " decision
 
-   echo 'Go to ' $(hostname -I)
 
 if [ "$decision" = "y" ]; then
 
@@ -31,7 +30,8 @@ if [ "$decision" = "y" ]; then
    #Installation of Apache2
    apt-get install apache2 && apt-get install libapache2-mod-php
 
+   #Move drive to web-root, Remove installer and Show ip
    mv ../drive-master /var/www/html/drive
-   echo 'Go to ' hostanme -I
    rm /var/www/html/drive/installer.sh
+   echo -e '\033[0;31m Go to ' $(hostanme -I)
 fi
