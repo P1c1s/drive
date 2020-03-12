@@ -27,6 +27,9 @@ clear
 #Stop for 2 seconds the script
 sleep 2;
 
+#Clean terminal
+clear;
+
 echo '  _    _           _       _          _____                      _      _           _';
 echo ' | |  | |         | |     | |        / ____|                    | |    | |         | |';
 echo ' | |  | |_ __   __| | __ _| |_ ___  | |     ___  _ __ ___  _ __ | | ___| |_ ___  __| |';
